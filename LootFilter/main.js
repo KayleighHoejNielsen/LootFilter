@@ -3,12 +3,12 @@ const { app, BrowserWindow } = require('electron')
 function createWindow() {
     // Create the browser window.
     const mainWindow = new BrowserWindow({
-        autoHideMenuBar: true,
         width: 800,
         height: 600,
     });
 
     // and load the index.html of the app.
+    console.log("Here's my log");
     mainWindow.loadFile('index.html');
 }
 
