@@ -2,7 +2,7 @@ const path = require('path');
 module.exports = {
     mode: "development",
     entry: './src/index.tsx',
-    target: 'electron-main',
+    target: 'electron-renderer',
     module: {
         rules: [
             {
