@@ -6,9 +6,12 @@ function createWindow() {
         width: 800,
         height: 600,
         webPreferences: {
-            nodeIntegration: true
+            nodeIntegration: true,
+            contextIsolation: false
         }
     });
+
+    mainWindow.webContents.openDevTools()
 
     // and load the index.html of the app.
     console.log("Here's my log");
